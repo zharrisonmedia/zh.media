@@ -1,0 +1,385 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Prevent images or videos from overflowing their containers */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0b0c10;
+  color: #ffffff;
+}
+
+/* NAVBAR STYLES */
+.navbar1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d0d0d;
+  padding: 40px 80px;
+  height: 100px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d0d0d;
+  padding: 40px 80px;
+  height: 100px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 90px;
+  width: auto;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  height: 95px;
+  width: auto;
+}
+
+.nav-links1 {
+  display: flex;
+  list-style: none;
+  gap: 60px; /* Space between links */
+}
+
+
+.nav-links1 a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+/* hover effect for nav items */
+.nav-links1 a:hover {
+  color: #6e4af0;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 60px; /* Space between links */
+}
+
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+/* hover effect for nav items */
+.nav-links a:hover {
+  color: #6e4af0;
+}
+
+
+.hero {
+  height: 100vh; /* Takes up 80% of screen height */
+  justify-content: center; /* Positions text toward the top half */
+  padding-top: 50px;
+  align-items: flex-start;
+  margin-bottom: 0px;
+  text-align: center;
+  align-items: center;
+  display: block;
+  background: radial-gradient(circle at 50% 20%, #3040b0 0%, #151a50 40%, #050610 85%);
+}
+
+.hero-title {
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 6px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0px 0 20px 0;
+  
+  /* glow */
+  text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 15px rgba(100, 150, 255, 0.6),
+    0 0 30px rgba(100, 150, 255, 0.4);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0px 0 50px 0;
+  
+  /* glow */
+  text-shadow: 
+    0 0 2px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(100, 150, 255, 0.6),
+    0 0 15px rgba(100, 150, 255, 0.4);
+}
+
+/* animated logo*/
+.video-container {
+  display: flex;
+  justify-content: center; /* Horizontally centers the video */
+  align-items: center;     /* Vertically centers if given height */
+  width: 100%;
+  padding: 20px 0;
+}
+
+.logo2 {
+  height: 100%;
+  width: auto;
+  border-radius: 50%;
+}
+
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-transform: uppercase;
+  gap: 200px; /* Space between links */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  max-width: 400px;
+  padding: 50px;
+}
+.custom-button {
+  background-color: #151a50;
+  box-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.8),
+    0 0 10px #d37b24,
+    0 0 15px #151a50;
+  color: white;
+  text-shadow: 
+    0 0 1px rgba(255, 255, 255, 0.8);
+  border: 0.5px solid #f7f5f3;
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  border-radius: 7px;
+  font-size: 1.25rem;
+  font-weight: 550;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: #d37b24;
+}
+
+
+/* --- DESKTOP: Hide hamburger button by default --- */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1000;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+
+/* Prevent images or videos from overflowing their containers */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================================
+   MOBILE & TABLET STYLES (Screens under 768px)
+   ========================================== */
+@media (max-width: 768px) {
+
+  /* 1. Stack navigation items vertically instead of side-by-side */
+  .navbar1 {
+    height: auto;
+    padding: 20px;
+    gap: 1px;
+  }
+
+  .nav-links1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 1px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  /* 2. Scale down large hero text so it doesn't wrap awkwardly */
+  .hero-title {
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+
+  /* 3. Stack CTA buttons vertically and reduce spacing */
+  .cta-buttons {
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .button-container {
+    padding: 20px;
+    max-width: 100%;
+  } 
+
+  .custom-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .logo {
+    height: 70px;
+  }
+
+  .logo:hover {
+    height: 70px;
+  }
+
+  .contact-list {
+    padding-left: 20px;
+    gap: 20px;
+  }
+
+  .hero {
+    height: auto; /* Adjust height for smaller screens */
+    padding-top: 60px;
+    padding-left: 20px; 
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-title {
+    text-align: center;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .button-container {
+    align-items: center;
+  }
+
+  .custom-button {
+    text-align: center;
+  }
+
+  .contact-list {
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .logo2 {
+    height: 80%;
+    width: auto;
+  
+  } 
+
+  .navbar1 {
+    position: relative;
+    justify-content: space-between; /* Keeps logo on left, menu icon on right */
+    padding: 15px 20px;
+  }
+
+  /* Show hamburger button on mobile */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Slide-down mobile nav links container */
+  .nav-links1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Drops right below the navbar header */
+    left: 0;
+    width: 100%;
+    background-color: #0d0d0d;
+    padding: 0;
+    max-height: 0;            /* Hidden by default */
+    overflow: hidden;          /* Clips content while closed */
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  /* CLASS ADDED BY JAVASCRIPT WHEN OPENED */
+  .nav-links1.active {
+    max-height: 300px; /* Adjust height based on number of link items */
+    padding: 25px 0;
+  }
+
+  /* Optional: Animate hamburger into an 'X' when open */
+  .menu-toggle.open .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.open .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}

@@ -1,0 +1,453 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0b0c10;
+  color: #ffffff;
+}
+
+/* NAVBAR STYLES */
+.navbar1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d0d0d;
+  padding: 40px 80px;
+  height: 100px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d0d0d;
+  padding: 40px 80px;
+  height: 100px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 90px;
+  width: auto;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  height: 95px;
+  width: auto;
+}
+
+.nav-links1 {
+  display: flex;
+  list-style: none;
+  gap: 60px; /* Space between links */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 60px; /* Space between links */
+}
+
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-links1 a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+/* hover effect for nav items */
+.nav-links1 a:hover {
+  color: #6e4af0;
+}
+
+.nav-links a:hover {
+  color: #6e4af0;
+}
+
+/* --- HERO SECTION STYLES --- */
+.hero {
+  height: 200vh; /* Takes up 80% of screen height */
+  justify-content: center; /* Positions text toward the top half */
+  padding-top: 70px;
+  padding-left: 150px; 
+  padding-right: 150px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  text-align: left;
+  display: block;
+
+  /* Creates the deep blue to black gradient matching your screenshot */
+  background: radial-gradient(circle at 50% 20%, #3040b0 0%, #151a50 40%, #050610 85%);
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 6px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0px 0 50px 0;
+  
+  /* Glowing lens-flare style text effect */
+  text-shadow: 
+    0 0 3px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(100, 150, 255, 0.6),
+    0 0 30px rgba(100, 150, 255, 0.4);
+}
+
+.hero-subtitle1 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hero-subtitle2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hero-subtitle3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hero-subtitle3 a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.hero-subtitle3 a:hover {
+  color: #d37b24;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  gap: 50px;
+  margin-top: 70px;
+}
+
+
+.fl-trailer {
+  display: flex;
+  height: 300px;
+  width: auto;
+  border-radius: 10%;
+  box-shadow:
+    0 0 3px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(100, 150, 255, 0.6),
+    0 0 30px rgba(100, 150, 255, 0.4);
+    transition: 0.3s ease;
+}
+
+.fl-trailer:hover{
+    scale: 103%
+}
+
+.ovrdc {
+  display: flex;
+  height: 300px;
+  width: auto;
+  border-radius: 10%;
+  box-shadow:
+    0 0 3px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(100, 150, 255, 0.6),
+    0 0 30px rgba(100, 150, 255, 0.4);
+    transition: 0.3s ease;
+}
+
+.ovrdc:hover{
+    scale: 103%
+}
+
+.cat-camp {
+  display: flex;
+  height: 300px;
+  width: auto;
+  border-radius: 10%;
+  box-shadow:
+    0 0 3px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(100, 150, 255, 0.6),
+    0 0 30px rgba(100, 150, 255, 0.4);
+    transition: 0.3s ease;
+}
+
+.cat-camp:hover{
+    scale: 103%
+}
+
+.horizontal-line {
+  border: none;            /* Remove the default browser border */
+  height: 2px;             /* Control the thickness of the line */
+  background-color: #ffffff;  /* Control the color of the line */
+  width: 100%;             /* Control the width (can be px or %) */
+  margin: 70px 0;          /* Add space above and below the line */
+}
+
+
+.photo1 {
+  display: flex;
+  height: 300px;
+  width: auto;
+  border-radius: 10%;
+  box-shadow:
+    0 0 3px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(100, 150, 255, 0.6),
+    0 0 30px rgba(100, 150, 255, 0.4);
+    transition: 0.3s ease;
+}
+
+.photo2 {
+  display: flex;
+  height: 300px;
+  width: auto;
+  border-radius: 10%;
+  box-shadow:
+    0 0 3px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(100, 150, 255, 0.6),
+    0 0 30px rgba(100, 150, 255, 0.4);
+    transition: 0.3s ease;
+}
+
+.photo3 {
+  display: flex;
+  height: 300px;
+  width: auto;
+  border-radius: 10%;
+  box-shadow:
+    0 0 3px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(100, 150, 255, 0.6),
+    0 0 30px rgba(100, 150, 255, 0.4);
+    transition: 0.3s ease;
+}
+
+
+.button-container {
+    display: flex;
+  justify-content: center; /* Centers horizontally */
+  margin-top: 70px;;
+}
+
+.portfolio-button {
+  background-color: #151a50;
+  box-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.8),
+    0 0 10px #d37b24,
+    0 0 15px #151a50;
+  color: white;
+  text-shadow: 
+    0 0 1px rgba(255, 255, 255, 0.8);
+  border: 0.5px solid #f7f5f3;
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  border-radius: 7px;
+  font-size: 1.25rem;
+  font-weight: 550;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.portfolio-button:hover {
+    background-color: #d37b24;
+}
+
+/* --- DESKTOP: Hide hamburger button by default --- */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1000;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+
+/* Prevent images or videos from overflowing their containers */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ======================================================
+   MOBILE RESPONSIVE STYLES (Screens 768px & below)
+   ====================================================== */
+@media (max-width: 768px) {
+
+  /* --- 1. NAVBAR --- */
+.navbar1 {
+    height: auto;
+    padding: 20px;
+    gap: 1px;
+  }
+
+  .nav-links1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 1px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .navbar1 {
+    position: relative;
+    justify-content: space-between; /* Keeps logo on left, menu icon on right */
+    padding: 15px 20px;
+  }
+
+  .logo {
+    height: 70px;
+  }
+
+  .logo:hover {
+    height: 70px;
+  }
+
+  /* --- 2. HERO SECTION --- */
+  .hero {
+    height: auto; /* Overrides 200vh so content grows naturally without clipping */
+    padding-top: 40px;
+    padding-bottom: 60px;
+    padding-left: 20px;  /* Removes 150px desktop side margins */
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+  }
+
+  .hero-subtitle1,
+  .hero-subtitle2,
+  .hero-subtitle3,
+  .hero-subtitle3 a {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* --- 3. MEDIA CARDS & GALLERIES --- */
+  .image-container {
+    flex-direction: column; /* Stacks horizontal video/photo cards vertically */
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .fl-trailer,
+  .ovrdc,
+  .cat-camp,
+  .photo1,
+  .photo2,
+  .photo3 {
+    height: auto;
+    width: 100%;
+    max-width: 320px; /* Constrains card sizes cleanly on phone screens */
+  }
+
+  .horizontal-line {
+    margin: 40px 0; /* Tightens vertical divider space on smaller screens */
+  }
+
+  /* --- 4. BUTTON & CTA --- */
+  .button-container {
+    margin-top: 40px;
+  }
+
+  .portfolio-button {
+    font-size: 1rem;
+    padding: 12px 24px;
+    width: 100%;
+    max-width: 280px; /* Full-width mobile touch target */
+  }
+
+      /* Show hamburger button on mobile */
+  .menu-toggle {
+    display: flex;
+  }
+  /* Slide-down mobile nav links container */
+  .nav-links1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Drops right below the navbar header */
+    left: 0;
+    width: 100%;
+    background-color: #0d0d0d;
+    padding: 0;
+    max-height: 0;            /* Hidden by default */
+    overflow: hidden;          /* Clips content while closed */
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  /* CLASS ADDED BY JAVASCRIPT WHEN OPENED */
+  .nav-links1.active {
+    max-height: 300px; /* Adjust height based on number of link items */
+    padding: 25px 0;
+  }
+
+  /* Optional: Animate hamburger into an 'X' when open */
+  .menu-toggle.open .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.open .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
