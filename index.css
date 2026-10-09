@@ -98,8 +98,8 @@ body {
 
 
 .hero {
-  height: 100vh; /* Takes up 80% of screen height */
-  justify-content: center; /* Positions text toward the top half */
+  min-height: 100vh;
+  justify-content: center; 
   padding-top: 50px;
   align-items: flex-start;
   margin-bottom: 0px;
