@@ -89,7 +89,7 @@ body {
 
 /* --- HERO SECTION STYLES --- */
 .hero {
-  min-height: 200vh;
+  min-height: 190vh;
   justify-content: center; /* Positions text toward the top half */
   padding-top: 70px;
   padding-left: 150px; 
